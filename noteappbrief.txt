@@ -1,0 +1,6 @@
+NOTE APP brief
+
+folder: folder of the NOTE, created by AUTHOR
+- array
+
+author:
