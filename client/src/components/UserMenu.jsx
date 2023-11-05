@@ -27,7 +27,8 @@ export default function UserMenu(){
                 </Typography>
                 <Avatar alt='avatar' src={photoURL} sx={{ width: 24, height: 24, marginLeft: '5px'}}/>
             </Box>
-            <Menu id="basic-menu" anchorEl={anchorEl} open={open} close={handleClose}> 
+            <Menu id="basic-menu" anchorEl={anchorEl} open={open} close={handleClose}>
+                <MenuItem>WELCOME</MenuItem>
                 <MenuItem onClick={handleLogout}>Log out</MenuItem>
             </Menu>
         </>
