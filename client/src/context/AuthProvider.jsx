@@ -1,13 +1,13 @@
 import { createContext, useEffect, useState } from "react";
 import { getAuth } from 'firebase/auth';
-import { useNavigation } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 export const AuthContext = createContext();
 
 export default function AuthProvider({children}){
     const [user, setUser] = useState({});
     const auth = getAuth();
-    const navigate = useNavigation();
+    const navigate = useNavigate();
 
     useEffect(() => {
         const unsubcribed = auth.onIdTokenChanged((user) => {
